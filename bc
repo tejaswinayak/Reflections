@@ -1,0 +1,9 @@
+Finding out binomial coefficients 
+1. using a 2D array of n rows and k columns (dynamic programming)
+2. By Recursion
+3. using a 1D array (to get the corresponding pascal tree line for the given n and k)
+
+Recursion can be used when there is a smaller value of n and k to be obtained only once and it increases space and time complexity as the values of n and k increase as it has go back everytime starting from first.
+Using a 2D array has a space complexity of theta(n,k), but it is helpful to get a large number of binomial coefficients at once as it maintains a table of values for every (n,k)
+Using a 1D array is helpful when we are concerned with only the value of NCk (last line) .It has a time complexity of O(n).
+both the methods i.e. Recursion and 2d array use Recurrence Relations
