@@ -1,2 +1,14 @@
-There are 3 approaches to solve an array-query problem
-* The look up table 
+3 approaches to solve an array-query problem
+The look up table approach where in a 2D Matrix of the size N*N is used for a linear array of size N.
+The Look up table gives us the minimum value between any 2 indices of an array.
+The processing speed and space complexity is O(n^2), while the fetch time is 1.
+Helpful in solving most of the sub array problems 
+
+Square root decomposition 
+Array of size N is divided into sqrt(N) parts and then minimum value of each part is stored in the corresponding block in another array.
+This technique is helpful only when start and end indices of a given array are in a single block i.e, difference between end and start indices is less than or equal to sqrt(N).
+the time complexity is O(sqrt(N))
+
+Segment Tree
+A segment tree builds a binary tree for every adjacent elements in an array of size N and then selects the minimum value from each subtree and this goes on till root element so as to get the minimum value
+The time complexity is O(NLogN) making it better than Look up table and square root decomposition 
